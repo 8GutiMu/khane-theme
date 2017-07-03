@@ -162,7 +162,10 @@
     height: 700px; }
   .title .titulo_bestPrice {
     padding: 50px; }
-  .title #starter, .title #basic, .title #feature, .title #professional {
+  .title #starter,
+  .title #basic,
+  .title #feature,
+  .title #professional {
     border: 1px solid #27AD60;
     width: 240px;
     height: 500px;

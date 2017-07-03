@@ -1,8 +1,6 @@
 @import "variables";
 @import "mixin";
 @import "aboutUs";
-
-
 @function anchoColumnas($columns) {
     @return percentage(($columns/12));
 }
@@ -32,7 +30,6 @@
 }
 
 .row {
-
     &:before {
         content: " ";
         display: table;
@@ -41,193 +38,171 @@
         @extend .row:before;
         clear: both;
     }
-
 }
 
-[class*="col-"]{
-  min-height: 7px;
-  padding: 12px;
-  float: left;
+[class*="col-"] {
+    min-height: 7px;
+    padding: 12px;
+    float: left;
 }
 
 
 /*best Prices*/
-.bestPrices{
-  text-align: center;
-  background: $color-blue;
-  h2{
-    font-family: 'Raleway', sans-serif;
+
+.bestPrices {
     text-align: center;
-    font-size: 5vh;
-    color: $color-text;
-  }
-  &__parrafosPrice{
-    font-family: 'Roboto', sans-serif;
-    color:lighten(black, 80%);
-    font-size: 2.5vh;
-   }&--orange{
-     color:$color-orange;
-   }
-  }
-
-.subtitle{
-  color:$color-text;
-  font-size: 1.5vh;
-}
-.title {
-  font-family: 'Raleway', sans-serif;
-
-#navg{
-  background-color: #27AD60;
-}
-
-
-#header{
-  background-image: url("../img/carousel-bg.jpg");
-  background-repeat: no-repeat;
-  color: $color-text;
-  height: 60vh;
-
-  text-align: center;
-}
-
-h1{
-  font-size: 35px
-}
-
-h3{
- font-size: 20px;
-}
-
-li {
-  display: inline-block;
-  padding: 20px;
-  list-style: none;
-  color: $color-text;
-}
-
-a {
-  text-decoration: none;
-  padding: 10px;
-  font-weight: 700;
-  color: $color-text;
-}
-
-span {
-  margin: 0 100px;
-  font-weight: 900;
-  display: inline-block; }
-
-
-#bestPrice{
-  background: $color-blue;
-  color: $color-text;
-  height: 700px;
-}
-
-.titulo_bestPrice{
-  padding: 50px;
-}
-
-@mixin tarjeta{
-  border: 1px solid $color-green;
-  width: 240px;
-  height: 500px;
-  text-align: center;
-  margin-top: 50px;
-  margin-left: 45px;
-  padding: 0;
-}
-
-#starter, #basic, #feature, #professional{
-  @include tarjeta;
-}
-
-#feature{
-  border: 1px solid #e67e22;
-  margin-top: 20px;
-}
-
-.paquete_titulo{
-  padding: 20px;
-}
-
-.verde{
-  background: $color-green;
-  padding: 30px;
-}
-
-.paquete_precio{
-  font-size: 40px;
-}
-
-.paquete_precio--chiquita{
-  font-size: 10px;
-  padding-top: 15px;
-}
-
-.paquete_contenido{
-  height: 35px;
-  padding: 10px;
-}
-
-.blanco{
-  background: $color-text;
-  color: $color-blue;
-}
-
-.btn-cafe{
-  background: #443e44;
-  border: none;
-  color: $color-text;
-  width: 80px;
-  height: 30px;
-  margin: 30px;
-  font-size: 15px;
-}
-/*best Prices*/
-.bestPrices{
-  text-align: right;
-  &__parrafosPrice{
-    @include parrafosPrice;
-  }
+    background: $color-blue;
+    h2 {
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        font-size: 5vh;
+        color: $color-text;
     }
+    &__parrafosPrice {
+        font-family: 'Roboto', sans-serif;
+        color: lighten(black, 80%);
+        font-size: 2.5vh;
+    }
+    &--orange {
+        color: $color-orange;
+    }
+}
 
+.subtitle {
+    color: $color-text;
+    font-size: 1.5vh;
+}
 
 .title {
-  font-family: 'Raleway', sans-serif;
-  text-align: center;
-
+    font-family: 'Raleway', sans-serif;
+    #navg {
+        background-color: #27AD60;
+    }
+    #header {
+        background-image: url("../img/carousel-bg.jpg");
+        background-repeat: no-repeat;
+        color: $color-text;
+        height: 60vh;
+        text-align: center;
+    }
+    h1 {
+        font-size: 35px
+    }
+    h3 {
+        font-size: 20px;
+    }
+    li {
+        display: inline-block;
+        padding: 20px;
+        list-style: none;
+        color: $color-text;
+    }
+    a {
+        text-decoration: none;
+        padding: 10px;
+        font-weight: 700;
+        color: $color-text;
+    }
+    span {
+        margin: 0 100px;
+        font-weight: 900;
+        display: inline-block;
+    }
+    #bestPrice {
+        background: $color-blue;
+        color: $color-text;
+        height: 700px;
+    }
+    .titulo_bestPrice {
+        padding: 50px;
+    }
+    @mixin tarjeta {
+        border: 1px solid $color-green;
+        width: 240px;
+        height: 500px;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 45px;
+        padding: 0;
+    }
+    #starter,
+    #basic,
+    #feature,
+    #professional {
+        @include tarjeta;
+    }
+    #feature {
+        border: 1px solid #e67e22;
+        margin-top: 20px;
+    }
+    .paquete_titulo {
+        padding: 20px;
+    }
+    .verde {
+        background: $color-green;
+        padding: 30px;
+    }
+    .paquete_precio {
+        font-size: 40px;
+    }
+    .paquete_precio--chiquita {
+        font-size: 10px;
+        padding-top: 15px;
+    }
+    .paquete_contenido {
+        height: 35px;
+        padding: 10px;
+    }
+    .blanco {
+        background: $color-text;
+        color: $color-blue;
+    }
+    .btn-cafe {
+        background: #443e44;
+        border: none;
+        color: $color-text;
+        width: 80px;
+        height: 30px;
+        margin: 30px;
+        font-size: 15px;
+    }
+    /*best Prices*/
+    .bestPrices {
+        text-align: right;
+        &__parrafosPrice {
+            @include parrafosPrice;
+        }
+    }
+    .title {
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+    }
+    &--color25 {
+        background-color: #DC403B;
+    }
 }
 
-
-  &--color25 {
-  background-color: #DC403B;
-  }
+.imagen {
+    background-image: url(../img/img-divider-img.jpg);
+    whidth: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__sociales {
+        padding: 20px;
+        color: $color-text;
+    }
 }
 
-.imagen{
-	 background-image: url(../img/img-divider-img.jpg);
-	    whidth: 100%;
-	    height:500px;
-	    display:flex;
-	    justify-content:center;
-	    align-items:center;
-	    &__sociales{
-	    padding:20px;
-      color:$color-text;
-	    }
-
+.footer {
+    background-color: $color-green;
+    &__informacion {
+        color: $color-text;
+        padding: 10px;
+        text-align: center;
+    }
 }
-.footer{
-  background-color:$color-green;
-  &__informacion{
-  color:$color-text;
-  padding:10px;
-  text-align:center;
-  }
-}
-
 
 [class*="col-"] {
     min-height: 7px;
@@ -330,40 +305,40 @@ span {
             background-color: #DC403B;
         }
     }
-
 }
 
-.bestPrices{
-  text-align: center;
-  background: $color-blue;
-  h2{
-    font-family: 'Raleway', sans-serif;
+.bestPrices {
     text-align: center;
-    font-size: 5vh;
-    color: $color-text;
-  }
-  &__parrafosPrice{
-    font-family: 'Roboto', sans-serif;
-    color:lighten(black, 80%);
-    font-size: 2.5vh;
-   }&--orange{
-     color:$color-orange;
-   }
-  }
-
-.subtitle{
-  color:$color-text;
-  font-size: 1.5vh;
+    background: $color-blue;
+    h2 {
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        font-size: 5vh;
+        color: $color-text;
+    }
+    &__parrafosPrice {
+        font-family: 'Roboto', sans-serif;
+        color: lighten(black, 80%);
+        font-size: 2.5vh;
+    }
+    &--orange {
+        color: $color-orange;
+    }
 }
-        .imagen {
-            background-image: url(../img/img-divider-img.jpg);
-            whidth: 100%;
-            height: 500px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            &__sociales {
-                padding: 20px;
-            }
-        }
 
+.subtitle {
+    color: $color-text;
+    font-size: 1.5vh;
+}
+
+.imagen {
+    background-image: url(../img/img-divider-img.jpg);
+    whidth: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__sociales {
+        padding: 20px;
+    }
+}
