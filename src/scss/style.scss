@@ -1,6 +1,8 @@
+
 @import "variables";
 @import "mixin";
 @import "aboutUs";
+
 @function anchoColumnas($columns) {
     @return percentage(($columns/12));
 }
@@ -341,4 +343,24 @@
     &__sociales {
         padding: 20px;
     }
+}
+
+.whatWeDo {
+  background-color: $color-green;
+  color: $color-text;
+  text-align: center;
+  &__division {
+    border-top: 2px solid $color-text;
+  }
+  &__imagesDesign {
+    background: linear-gradient(to right, $color-gray 50%, $color-blue 100%);
+  }
+  &__button {
+    background-color: darken($color-gray, 35%);
+    color: $color-text;
+    padding: 2%;
+  }
+  &__imgTeam {
+    width: 80%;
+  }
 }

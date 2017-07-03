@@ -107,6 +107,22 @@
   padding: 12px;
   float: left; }
 
+
+.whatWeDo {
+  background-color: #27AD60;
+  color: white;
+  text-align: center; }
+  .whatWeDo__division {
+    border-top: 2px solid white; }
+  .whatWeDo__imagesDesign {
+    background: linear-gradient(to right, #818e9b 50%, #2C3E50 100%); }
+  .whatWeDo__button {
+    background-color: #2f353b;
+    color: white;
+    padding: 2%; }
+  .whatWeDo__imgTeam {
+    width: 80%; }
+
 /*best Prices*/
 .bestPrices {
   text-align: center;
@@ -326,5 +342,6 @@
   align-items: center; }
   .imagen__sociales {
     padding: 20px; }
+
 
 /*# sourceMappingURL=style.css.map */
