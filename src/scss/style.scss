@@ -208,7 +208,7 @@ span {
 
 .imagen{
 	 background-image: url(../img/img-divider-img.jpg);
-	    whidth: 100%;
+	    width: 100%;
 	    height:500px;
 	    display:flex;
 	    justify-content:center;
@@ -225,7 +225,19 @@ span {
   color:$color-text;
   padding:10px;
   text-align:center;
+  &--negro{
+  color:black;
+  .privacidad{
+  margin:0;
+  color:$color-text;
   }
+  }
+  }
+}
+.linea_footer{
+  width:60px;
+  margin-left:43%;
+  margin-bottom: 20px;
 }
 
 
