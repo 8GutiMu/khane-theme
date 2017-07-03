@@ -107,8 +107,6 @@
   padding: 12px;
   float: left; }
 
-
-
 /*best Prices*/
 .bestPrices {
   text-align: center;
@@ -117,7 +115,7 @@
     font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 5vh;
-    color: white; }
+    color: #fff; }
   .bestPrices__parrafosPrice {
     font-family: 'Roboto', sans-serif;
     color: #cccccc;
@@ -126,103 +124,106 @@
     color: #EE7239; }
 
 .subtitle {
-  color: white;
+  color: #fff;
   font-size: 1.5vh; }
-
-#navg {
-  background-color: #27AD60; }
-
-#header {
-  background-image: url("../img/carousel-bg.jpg");
-  background-repeat: no-repeat;
-  color: #fff;
-  height: 60vh;
-  text-align: center; }
-
-h1 {
-  font-size: 35px; }
-
-h3 {
-  font-size: 20px; }
-
-li {
-  display: inline-block;
-  padding: 20px;
-  list-style: none;
-  color: #fff; }
-
-a {
-  text-decoration: none;
-  padding: 10px;
-  font-weight: 700;
-  color: #fff; }
-
-span {
-  margin: 0 100px;
-  font-weight: 900;
-  display: inline-block; }
-
-#bestPrice {
-  background: #2C3E50;
-  color: #fff;
-  height: 700px; }
-
-.titulo_bestPrice {
-  padding: 50px; }
-
-#starter, #basic, #feature, #professional {
-  border: 1px solid #27AD60;
-  width: 240px;
-  height: 500px;
-  text-align: center;
-  margin-top: 50px;
-  margin-left: 45px;
-  padding: 0; }
-
-#feature {
-  border: 1px solid #e67e22;
-  margin-top: 20px; }
-
-.paquete_titulo {
-  padding: 20px; }
-
-.verde {
-  background: #27AD60;
-  padding: 30px; }
-
-.paquete_precio {
-  font-size: 40px; }
-
-.paquete_precio--chiquita {
-  font-size: 10px;
-  padding-top: 15px; }
-
-.paquete_contenido {
-  height: 35px;
-  padding: 10px; }
-
-.blanco {
-  background: #fff;
-  color: #2C3E50; }
-
-.btn-cafe {
-  background: #443e44;
-  border: none;
-  color: #fff;
-  width: 80px;
-  height: 30px;
-  margin: 30px;
-  font-size: 15px; }
-
-/*best Prices*/
-.bestPrices {
-  text-align: right; }
-  .bestPrices__parrafosPrice {
-    color: #fff; }
 
 .title {
   font-family: 'Raleway', sans-serif;
-  text-align: center; }
+  /*best Prices*/ }
+  .title #navg {
+    background-color: #27AD60; }
+  .title #header {
+    background-image: url("../img/carousel-bg.jpg");
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 60vh;
+    text-align: center; }
+  .title h1 {
+    font-size: 35px; }
+  .title h3 {
+    font-size: 20px; }
+  .title li {
+    display: inline-block;
+    padding: 20px;
+    list-style: none;
+    color: #fff; }
+  .title a {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 700;
+    color: #fff; }
+  .title span {
+    margin: 0 100px;
+    font-weight: 900;
+    display: inline-block; }
+  .title #bestPrice {
+    background: #2C3E50;
+    color: #fff;
+    height: 700px; }
+  .title .titulo_bestPrice {
+    padding: 50px; }
+  .title #starter, .title #basic, .title #feature, .title #professional {
+    border: 1px solid #27AD60;
+    width: 240px;
+    height: 500px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 45px;
+    padding: 0; }
+  .title #feature {
+    border: 1px solid #e67e22;
+    margin-top: 20px; }
+  .title .paquete_titulo {
+    padding: 20px; }
+  .title .verde {
+    background: #27AD60;
+    padding: 30px; }
+  .title .paquete_precio {
+    font-size: 40px; }
+  .title .paquete_precio--chiquita {
+    font-size: 10px;
+    padding-top: 15px; }
+  .title .paquete_contenido {
+    height: 35px;
+    padding: 10px; }
+  .title .blanco {
+    background: #fff;
+    color: #2C3E50; }
+  .title .btn-cafe {
+    background: #443e44;
+    border: none;
+    color: #fff;
+    width: 80px;
+    height: 30px;
+    margin: 30px;
+    font-size: 15px; }
+  .title .bestPrices {
+    text-align: right; }
+    .title .bestPrices__parrafosPrice {
+      color: #fff; }
+  .title .title {
+    font-family: 'Raleway', sans-serif;
+    text-align: center; }
+  .title--color25 {
+    background-color: #DC403B; }
+
+.imagen {
+  background-image: url(../img/img-divider-img.jpg);
+  whidth: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .imagen__sociales {
+    padding: 20px;
+    color: #fff; }
+
+.footer {
+  background-color: #27AD60; }
+  .footer__informacion {
+    color: #fff;
+    padding: 10px;
+    text-align: center; }
 
 [class*="col-"] {
   min-height: 7px;
@@ -294,6 +295,25 @@ span {
     .bestPrices .box--color25 {
       background-color: #DC403B; }
 
+.bestPrices {
+  text-align: center;
+  background: #2C3E50; }
+  .bestPrices h2 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 5vh;
+    color: #fff; }
+  .bestPrices__parrafosPrice {
+    font-family: 'Roboto', sans-serif;
+    color: #cccccc;
+    font-size: 2.5vh; }
+  .bestPrices--orange {
+    color: #EE7239; }
+
+.subtitle {
+  color: #fff;
+  font-size: 1.5vh; }
+
 .imagen {
   background-image: url(../img/img-divider-img.jpg);
   whidth: 100%;
@@ -302,17 +322,6 @@ span {
   justify-content: center;
   align-items: center; }
   .imagen__sociales {
-
-    padding: 20px;
-    color: white; }
-
-.footer {
-  background-color: #27AD60; }
-  .footer__informacion {
-    color: white;
-    padding: 10px;
-    text-align: center; }
     padding: 20px; }
-
 
 /*# sourceMappingURL=style.css.map */
